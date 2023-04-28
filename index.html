@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://www.dukelearntoprogram.com//course1/common/js/image/SimpleImage.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+
+    <link href='https://fonts.googleapis.com/css?family=Amethysta' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Caesar+Dressing' rel='stylesheet' type='text/css'>
+</head>
+<body>
+    
+    <h1> <span class="fire">green</span><span class="burn">screen </span><span class="burn">fil</span><span class="fire">ter</span></h1>
+    <canvas id="fgcan" style= "width: 280px" ></canvas>
+    <canvas id="bgcan" style= "width: 280px"></canvas>
+    <canvas id="result" style= "width: 280px"></canvas>
+
+    
+    <label for="fgfile">
+        <div>Please choose a FG image</div>
+        <input type="file"  id="fgfile" multiple="false" accept="image/*" onchange="loadForegroundImage()">
+      </label>
+      <label for="fgfile">
+        <div>Please choose a BG image</div>
+        <input type="file"  id="bgfile" multiple="false" accept="image/*" onchange="loadBackgroundImage()">
+      </label>
+      <input class= "button" type="button" value="Create Composite" onclick="doGreenScreen()">
+      <input class= "button"type="button" value="Clear Canvases" onclick=" clearCanvas()">
+
+    <script src="main.js"></script>
+
+   
+      
+</body>
+</html>
